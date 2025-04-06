@@ -1,0 +1,177 @@
+/* Base Styles */
+:root {
+  --primary-bg: #12131a;
+  --header-color: #151515;
+  --text-color: #444444;
+  --primary-gold: #D5966C;
+  --small-font-size: 5vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    max-width: 375px;
+    max-height: 630px;
+    height: 100%;
+}
+
+.top-image, .second-page-image, .third-page-image, .fourth-page-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top-image{
+    background-image: url("./assets/desktop/image-hero@2x.jpg");
+    width: 100vw;
+    aspect-ratio: 16/10;
+}
+
+.top-page-header, .second-page-header, .fourth-page-header, .footer-header{
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-page-header, .second-page-header{
+    color: var(--header-color);
+    font-size: 10vw;
+}
+
+.top-page-description, .second-page-description, .fourth-page-description, .footer-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+}
+.top-page-description, .second-page-description{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+.top-page-button{
+    width: 80%;
+    max-width: 260px;
+    aspect-ratio: 16/5;
+    background-color: var(--header-color);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    outline: 0;
+    padding: 0;
+    border: 0;
+} 
+
+.top-page-button:hover{
+    background-color: var(--primary-gold);
+}
+
+/*this tells the computer to change the anchor tag which is a child element when we hover across its parent*/
+.top-page-button:hover a{
+    background-color: var(--header-color);
+}
+.top-page-button span{
+    position: absolute;
+    height: 100%;
+    top: 1.8rem;
+    left: 0.7rem;
+    font-size: clamp(22px, 24px, 26px);
+}
+
+.top-page-button a{
+    position: absolute;
+    right: 0;
+    width: 22%;
+    height: 100%;
+    background-color: var(--primary-gold);
+}
+
+.top-page-button img{
+    position: absolute;
+    left: 1.1rem;
+    top: 1.5rem;
+    width: 1.5rem;
+    aspect-ratio: 16/25;
+}
+
+.second-page{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.second-page-image{
+    background-image: url("./assets/desktop/image-grid-1@2x.jpg");
+    width: 90vw;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    margin: 4rem auto 2rem auto;
+}
+
+.third-page{
+    width: 100vw;
+}
+.third-page-image{
+    background-image: url("./assets/desktop/image-grid-2@2x.jpg");
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    margin: 1rem auto 2rem auto;
+}
+.fourth-page-description{
+    font-size: var(--small-font-size);
+}
+
+.fourth-page{
+    width: 100vw;
+}
+.fourth-page-image{
+    background-image: url("./assets/desktop/image-grid-3@2x.jpg");
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    margin: 1rem auto 2rem auto;
+}
+.fourth-page-text{
+    box-sizing: border-box;
+    width: 90%;
+    height: 35vh;
+    margin: 0 auto;
+    margin: 1rem auto 2rem auto;
+    background-color: var(--header-color);
+    color: white;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+footer{
+    background-color: var(--header-color);
+    color: white;
+    padding: 3rem;
+    width: 100vw;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-description{
+    font-size: 4vw;
+    gap: 0.3rem;
+}
+.footer-header{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.socials{
+    display: flex;
+    width: 100%;
+    max-width: 2rem;
+    gap: 1.5rem;
+}
+
